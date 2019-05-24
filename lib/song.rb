@@ -50,9 +50,9 @@ class Song
     @song
   end
   def self.create_from_filename(filename)
-    @song = self.new
-    .create
-    @song
+    self.new_from_filename
+    self.create
+  
   end
   
   def self.destroy_all
