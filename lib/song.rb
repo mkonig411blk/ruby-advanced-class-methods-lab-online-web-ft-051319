@@ -37,7 +37,8 @@ class Song
        @song
      else self.create_by_name(name)
       end
-end
+  end
 
-def
+def self.alphabetical
+  
 end
