@@ -27,3 +27,4 @@ class Song
     @song.name = name
     @song
 end
+end
