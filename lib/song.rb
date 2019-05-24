@@ -39,7 +39,16 @@ class Song
       end
   end
 
-def self.alphabetical
-  @@all.sort_by {|x| x.name}
+  def self.alphabetical
+    @@all.sort_by {|x| x.name}
+  end
+  
+  def self.new_from_filename(filename)
+    @song = self.new
+    array = filename.split(" - ")
+    @artist_name = array[0]
+    name_array = array[1].split(".")
+    @name = name_array[0]
+  end
 end
-end
+
